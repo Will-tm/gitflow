@@ -22,7 +22,7 @@ Or have a look at one of these screen casts:
 
 Installing git-flow
 -------------------
-See the Wiki for up-to-date [Installation Instructions](https://github.com/nvie/gitflow/wiki/Installation).
+See the Wiki for up-to-date [Installation Instructions](https://github.com/Will-tm/gitflow/wiki/Installation).
 
 
 Integration with your shell
@@ -36,7 +36,7 @@ git-flow subcommands and branch names.
 
 FAQ
 ---
-See the [FAQ](http://github.com/nvie/gitflow/wiki/FAQ) section of the project
+See the [FAQ](http://github.com/Will-tm/gitflow/wiki/FAQ) section of the project
 Wiki.
 
 
@@ -44,7 +44,7 @@ Please help out
 ---------------
 This project is still under development. Feedback and suggestions are very
 welcome and I encourage you to use the [Issues
-list](http://github.com/nvie/gitflow/issues) on Github to provide that
+list](http://github.com/Will-tm/gitflow/issues) on Github to provide that
 feedback.
 
 Feel free to fork this repo and to commit your additions. For a list of all
@@ -94,20 +94,33 @@ those questions to accept the (sane) default suggestions.
 The ``-d`` flag will accept all defaults.
 
 
-### Creating feature/release/hotfix/support branches
+### Creating feature/bugfix/release/hotfix/support branches
 
 * To list/start/finish feature branches, use:
   
-  		git flow feature
-  		git flow feature start <name> [<base>]
-  		git flow feature finish <name>
+      git flow feature
+      git flow feature start <name> [<base>]
+      git flow feature finish <name>
   
   For feature branches, the `<base>` arg must be a commit on `develop`.
 
 * To push/pull a feature branch to the remote repository, use:
 
-  		git flow feature publish <name>
-		  git flow feature pull <remote> <name>
+      git flow feature publish <name>
+      git flow feature pull <remote> <name>
+
+* To list/start/finish bugfix branches, use:
+  
+      git flow bugfix
+      git flow bugfix start <name> [<base>]
+      git flow bugfix finish <name>
+  
+  For bugfix branches, the `<base>` arg must be a commit on `develop`.
+
+* To push/pull a bugfix branch to the remote repository, use:
+
+      git flow bugfix publish <name>
+      git flow bugfix pull <remote> <name>
 
 * To list/start/finish release branches, use:
   
